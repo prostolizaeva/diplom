@@ -1,0 +1,41 @@
+.navigation {
+	padding-top: 64px;
+	padding-bottom: 63px;
+	padding-right: 200px;
+	padding-left: 200px;
+	display: flex;
+	justify-content: space-between;
+	top: 0;
+	background-color: #353f46;
+	opacity: 0.85;
+	width: 100%;
+	min-height: 150px;
+}
+
+.nav {
+	display: block;
+}
+
+.nav li {
+	display: inline;
+	padding-top: 25px;
+	padding-right: 25px;
+}
+
+.nav a {
+	margin: 13px  11px;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: $white;
+	text-decoration: none;
+}
+
+.logo {
+	width:127px;  
+	height: 23px;
+}
+
+.nav li:hover {
+	 border: solid 2px #4bcaff;
+	  padding: 13px 19px 11px 20px;
+}

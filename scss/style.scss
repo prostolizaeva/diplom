@@ -1,0 +1,64 @@
+$breakpoints: (
+	'xs-phone': 480px,
+	'phone': 576px,
+	'tablet': 768px,
+	'desktop': 1024px,
+	'widescreen': 1200px
+);
+
+// keywords
+$media-expressions: (
+	'screen': 'screen',
+	'print': 'print',
+	'handheld': 'handheld',
+	'landscape': '(orientation: landscape)',
+	'portrait': '(orientation: portrait)',
+	'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+	'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+
+// ligatured operators ≥ ≤
+
+@import 'components/_normalize.scss';
+
+// Базовые переменные  (изменяем от макета к макету)
+@import 'components/_variables.scss';
+
+// Медиазапросы НЕ ТРОГАЕМ
+@import 'components/_include-media.scss';
+
+// Базовые миксины  (изменяем от макета к макету)
+@import 'components/_mixins.scss';
+
+// Базовые стили для форм НЕ ТРОГАЕМ
+@import 'components/_form.scss';
+
+// Базовые стили для типографии (изменяем от макета к макету)
+@import 'components/_base.scss';
+
+// Стили для грида (изменяем от макета к макету)
+@import 'components/_grid.scss';
+
+// Стили для кнопок (изменяем от макета к макету)
+@import 'components/_button.scss';
+
+// Стили для компоненты nav (изменяем от макета к макету)
+@import 'components/_nav';
+
+// Стили для компоненты card (изменяем от макета к макету)
+@import 'components/_card.scss';
+
+// Сюда пишем общие стили для проекта (изменяем от макета к макету)
+@import 'layout/_common.scss';
+
+// Сюда пишем стили для хедера в проекта (изменяем от макета к макету)
+@import 'layout/_header.scss';
+
+// Сюда пишем стили для футера в проекта (изменяем от макета к макету)
+@import 'layout/_footer.scss';
+
+@import 'components/_customize.scss';
+
+@import 'components/_burger.scss';
+
+@import 'components/_stylesheet.scss'
